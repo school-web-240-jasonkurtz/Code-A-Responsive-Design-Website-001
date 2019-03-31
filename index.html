@@ -6,6 +6,11 @@
         <title>Resto</title>
         <link href="style.css" type="text/css" rel="stylesheet">
 	   <meta name="viewport" content="width=device-width">
+	   <script>
+	   	  // Create element for picture div
+		  document.createElement( "picture" );
+	   </script>
+	   <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.js" async></script>
     </head>
 
     <body>
@@ -30,7 +35,11 @@
         <!-- Start homepage content -->
 
         <div id="main-banner">
-            <img src="images/banner.jpg" alt="Welcome to Resto">
+		   <picture>
+           	 <source srcset="images/banner-small.jpg" media="(max-width: 480px)">
+           	 <source srcset="images/banner-medium.jpg" media="(max-width: 768px)">
+           	 <img srcset="images/banner.jpg" alt="pic">
+		   </picture>
         </div>
 
         <div class="wrapper">
@@ -141,7 +150,7 @@
 
     </body>
 
-    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="menu.js"></script>
-    
+
 </html>

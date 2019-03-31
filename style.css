@@ -277,13 +277,4 @@ footer a{
 	    margin: 30px 2% !important;
     }
 
-	#main-banner{
-		overflow: hidden;
-	}
-
-    #main-banner img{
-	    width: 180%;
-	    position: relative;
-	    left: -40%;
-    }
 }
